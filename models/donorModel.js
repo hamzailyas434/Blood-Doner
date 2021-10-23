@@ -3,35 +3,35 @@ const donorScheme = new mongoose.Schema({
     name: {
         type: String,
         trim: true,
-        requires: [true, `A Donor must have a Name`],
+        required: [true, `A Donor must have a Name`],
     },
     blood_group: {
         type: String,
         trim: true,
-        requires: [true, `A Donor must have a Blood Group`],
+        required: [true, `A Donor must have a Blood Group`],
     },
     last_donation_date: {
         type: String,
         trim: true,
-        requires: [true, `A Donor must have a Last Donation Date`],
+        required: [true, `A Donor must have a Last Donation Date`],
     },
     contact_no: {
         type: Number,
-        requires: [true, `A Donor must have a Contact Number`],
+        required: [true, `A Donor must have a Contact Number`],
     },
     cnic: {
         type: Number,
-        requires: [true, `A Donor must have a CNIC`],
+        required: [true, `A Donor must have a CNIC`],
     },
     location: {
         type: String,
         trim: true,
-        requires: [true, `A Donor must have a Location`],
+        required: [true, `A Donor must have a Location`],
     },
     city: {
         type: String,
         trim: true,
-        requires: [true, `A Donor must have a City Name`],
+        required: [true, `A Donor must have a City Name`],
     },
 });
 
